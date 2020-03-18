@@ -1,0 +1,21 @@
+
+
+
+<h1>Welcome Star Wars Freak</h1>
+<form method="POST" action="/" >
+<label for="category">  Categories:</label>
+<select id="cars" name="category">
+      <option> !--Select Category--! </option>
+  <option value="films">Films</option>
+  <option value="people">People </option>
+  <option value="planets">Planets</option>
+  <option value="species">Species</option>
+   <option value="starships/9/">Starships</option>
+    <option value="vehicles/4/">Vehicles</option>
+</select>
+<input type="submit" value="submit">
+</form>
+{{!-- <p>{{data.name}}</p>   to get only 1 data --}}
+{{#each data}}
+<p>{{@key}}: {{this}} </p>
+{{/each}}
